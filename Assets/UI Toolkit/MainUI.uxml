@@ -1,0 +1,24 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement style="flex-grow: 1; padding: 20px; background-color: rgb(43, 43, 43); color: rgb(255, 255, 255);">
+        <ui:VisualElement name="EncryptionBlock" style="margin-bottom: 20px; padding: 10px; border-width: 1px; border-color: rgb(100, 100, 100); border-radius: 5px;">
+            <ui:Label text="Encriptació&#10;" style="-unity-font-style: bold; margin-bottom: 5px;" />
+            <ui:TextField label="Text a processar" name="TextInput" placeholder-text="Escriu aquí..." />
+            <ui:VisualElement style="flex-direction: row; justify-content: space-around; margin-top: 10px;">
+                <ui:Button text="Encrypt" name="BtnEncrypt" style="flex-grow: 1;" />
+                <ui:Button text="Decrypt" name="BtnDecrypt" style="flex-grow: 1;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement style="height: 2px; background-color: rgb(80, 80, 80); margin-bottom: 20px;" />
+        <ui:VisualElement name="HashBlock" style="margin-bottom: 20px; padding: 10px; border-width: 1px; border-color: rgb(100, 100, 100); border-radius: 5px;">
+            <ui:Label text="Hash de Password&#10;" style="-unity-font-style: bold; margin-bottom: 5px;" />
+            <ui:TextField label="Password" name="PassInput" is-password="true" />
+            <ui:VisualElement style="flex-direction: row; justify-content: space-around; margin-top: 10px;">
+                <ui:Button text="Generar Hash" name="BtnHash" style="flex-grow: 1;" />
+                <ui:Button text="Verificar" name="BtnVerify" style="flex-grow: 1;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="Footer" style="padding: 10px; background-color: rgb(30, 30, 30); border-radius: 5px;">
+            <ui:Label name="ResultLabel" style="white-space: normal; -unity-font-style: bold; margin-top: 5px;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
